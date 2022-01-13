@@ -17,3 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.instagram.com/?hl=en')
+
+WebUI.setText(findTestObject('Object Repository/Page_Instagram/input_Phone number, username, or email_username'), 'mitha')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Instagram/input_Password_password'), 'aeHFOx8jV/A=')
+
+WebUI.click(findTestObject('Object Repository/Page_Instagram/div_Log In'))
+
+WebUI.click(findTestObject('Object Repository/Page_Instagram/p_Sorry, your password was incorrect. Pleas_47a749'))
+
